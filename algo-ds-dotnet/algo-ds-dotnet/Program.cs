@@ -1,4 +1,5 @@
-﻿using System;
+﻿using algo_ds_dotnet.Algorithms.Lesson1_BigONot;
+using System;
 
 namespace algo_ds_dotnet
 {
@@ -6,7 +7,11 @@ namespace algo_ds_dotnet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AddNNumbers.AddNNumbersTest();
+            NestedLoop.NestedList_1(2);
+
+
+            Console.ReadLine();
         }
     }
 }
