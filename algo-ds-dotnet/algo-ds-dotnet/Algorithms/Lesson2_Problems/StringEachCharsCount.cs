@@ -23,10 +23,13 @@ namespace algo_ds_dotnet.Algorithms.Lesson2_Problems
             // loop over the string chars
             foreach (var c in str)
             {
-                if (chars.ContainsKey(c))
-                    chars[c] += 1;
-                else
-                    chars.Add(c, 1);
+                if (char.IsLetterOrDigit(c))
+                {
+                    if (chars.ContainsKey(c))
+                        chars[c] += 1;
+                    else
+                        chars.Add(c, 1);
+                }
             }
 
             // return the result
