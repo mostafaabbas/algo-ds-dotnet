@@ -16,7 +16,7 @@ namespace algo_ds_dotnet
 
             //StringEachCharsCount.Run(Console.ReadLine());
 
-            ComparingTwoArrays.Run();
+            FrequencyCounterPattern.Run();
 
 
             Console.ReadLine();
