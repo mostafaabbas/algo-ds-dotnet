@@ -19,7 +19,10 @@ namespace algo_ds_dotnet
 
             //FrequencyCounterPattern.Run();
             //StringAnagram.Run();
-            MultiplePointers_ArraySumZero.Run();
+
+            //MultiplePointers_ArraySumZero.Run();
+            ArrayCountUniqueValues.Run();
+
 
 
             Console.ReadLine();
