@@ -1,4 +1,5 @@
-﻿using algo_ds_dotnet.Algorithms.Lesson1_BigONot;
+﻿using algo_ds_dotnet.Algorithms.Excercises;
+using algo_ds_dotnet.Algorithms.Lesson1_BigONot;
 using algo_ds_dotnet.Algorithms.Lesson2_Problems;
 using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
 using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
@@ -11,7 +12,7 @@ namespace algo_ds_dotnet
     {
         static void Main(string[] args)
         {
-            int x = 5;
+            #region lessons 1 - 5
 
             //AddNNumbers.AddNNumbersTest();
             //NestedLoop.NestedList_1(2);
@@ -24,9 +25,15 @@ namespace algo_ds_dotnet
             //MultiplePointers_ArraySumZero.Run();
             //ArrayCountUniqueValues.Run();
 
-            SlidingWindow_MaxSubarraySum.Run();
+            //SlidingWindow_MaxSubarraySum.Run();
 
+            #endregion
 
+            #region excercises
+
+            SameFrequency_Excercise.Run();
+
+            #endregion
 
             Console.ReadLine();
         }
