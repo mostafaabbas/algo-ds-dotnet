@@ -1,6 +1,7 @@
 ﻿using algo_ds_dotnet.Algorithms.Lesson1_BigONot;
 using algo_ds_dotnet.Algorithms.Lesson2_Problems;
 using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
+using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
 using System;
 
 namespace algo_ds_dotnet
@@ -16,7 +17,9 @@ namespace algo_ds_dotnet
 
             //StringEachCharsCount.Run(Console.ReadLine());
 
-            FrequencyCounterPattern.Run();
+            //FrequencyCounterPattern.Run();
+            //StringAnagram.Run();
+            MultiplePointers_ArraySumZero.Run();
 
 
             Console.ReadLine();
