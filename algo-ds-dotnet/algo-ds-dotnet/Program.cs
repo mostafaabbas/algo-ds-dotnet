@@ -33,7 +33,8 @@ namespace algo_ds_dotnet
 
             //SameFrequency_Excercise.Run();
             //AreThereDuplicates_Excercise.Run();
-            AveragePair_Excercise.Run();
+            //AveragePair_Excercise.Run();
+            IsSubsequence_Excercise.Run();
 
             #endregion
 
