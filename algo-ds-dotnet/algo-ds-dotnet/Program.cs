@@ -2,6 +2,7 @@
 using algo_ds_dotnet.Algorithms.Lesson2_Problems;
 using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
 using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
+using algo_ds_dotnet.Algorithms.Lesson5_SlidingWindow;
 using System;
 
 namespace algo_ds_dotnet
@@ -21,7 +22,9 @@ namespace algo_ds_dotnet
             //StringAnagram.Run();
 
             //MultiplePointers_ArraySumZero.Run();
-            ArrayCountUniqueValues.Run();
+            //ArrayCountUniqueValues.Run();
+
+            SlidingWindow_MaxSubarraySum.Run();
 
 
 
