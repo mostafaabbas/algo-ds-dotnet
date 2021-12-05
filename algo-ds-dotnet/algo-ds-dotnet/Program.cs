@@ -31,7 +31,8 @@ namespace algo_ds_dotnet
 
             #region excercises
 
-            SameFrequency_Excercise.Run();
+            //SameFrequency_Excercise.Run();
+            AreThereDuplicates_Excercise.Run();
 
             #endregion
 
