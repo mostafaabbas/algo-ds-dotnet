@@ -41,7 +41,8 @@ namespace algo_ds_dotnet
             #endregion
 
             //RecursionSimpleExample.Run();
-            FactorialExample.Run();
+            //FactorialExample.Run();
+            GetOddNumbers_Example.Run();
 
             Console.ReadLine();
         }
