@@ -34,7 +34,8 @@ namespace algo_ds_dotnet
             //SameFrequency_Excercise.Run();
             //AreThereDuplicates_Excercise.Run();
             //AveragePair_Excercise.Run();
-            IsSubsequence_Excercise.Run();
+            //IsSubsequence_Excercise.Run();
+            MaxSubarraySum_Excercise.Run();
 
             #endregion
 
