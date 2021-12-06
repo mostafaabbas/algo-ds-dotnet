@@ -4,6 +4,7 @@ using algo_ds_dotnet.Algorithms.Lesson2_Problems;
 using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
 using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
 using algo_ds_dotnet.Algorithms.Lesson5_SlidingWindow;
+using algo_ds_dotnet.Algorithms.Lesson6_Recursion;
 using System;
 
 namespace algo_ds_dotnet
@@ -35,9 +36,12 @@ namespace algo_ds_dotnet
             //AreThereDuplicates_Excercise.Run();
             //AveragePair_Excercise.Run();
             //IsSubsequence_Excercise.Run();
-            MaxSubarraySum_Excercise.Run();
+            //MaxSubarraySum_Excercise.Run();
 
             #endregion
+
+            //RecursionSimpleExample.Run();
+            FactorialExample.Run();
 
             Console.ReadLine();
         }
