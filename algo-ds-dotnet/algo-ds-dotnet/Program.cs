@@ -6,6 +6,7 @@ using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
 using algo_ds_dotnet.Algorithms.Lesson5_SlidingWindow;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion.Excercises2;
+using algo_ds_dotnet.Algorithms.Lesson7_Search;
 using System;
 
 namespace algo_ds_dotnet
@@ -41,6 +42,8 @@ namespace algo_ds_dotnet
 
             #endregion
 
+            #region recusrion
+
             //RecursionSimpleExample.Run();
             //FactorialExample.Run();
             //GetOddNumbers_Example.Run();
@@ -50,7 +53,13 @@ namespace algo_ds_dotnet
             //ReverseString_Excercise.Run();
             //IsPalindrome_Excercise.Run();
             //ArrayAndCallback_Excercise.Run();
-            NestedEvenSum_Excercise.Run();
+            //NestedEvenSum_Excercise.Run();
+
+            #endregion
+
+
+            L1_LinearSearch.Run();
+
 
             Console.ReadLine();
         }
