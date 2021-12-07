@@ -49,7 +49,8 @@ namespace algo_ds_dotnet
             //Fibonacci_Excercise.Run();
             //ReverseString_Excercise.Run();
             //IsPalindrome_Excercise.Run();
-            ArrayAndCallback_Excercise.Run();
+            //ArrayAndCallback_Excercise.Run();
+            NestedEvenSum_Excercise.Run();
 
             Console.ReadLine();
         }

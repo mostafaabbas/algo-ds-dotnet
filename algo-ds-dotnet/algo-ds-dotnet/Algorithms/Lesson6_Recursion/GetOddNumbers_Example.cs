@@ -1,4 +1,5 @@
-﻿using System;
+﻿using algo_ds_dotnet.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace algo_ds_dotnet.Algorithms.Lesson6_Recursion
     {
         public static void Run()
         {
-            PrintArray(GetOddNumbers(new int[] { 1, 2, 3, 4, 5, 6, 7, 9 }));
-            PrintArray(GetOddNumbers(new int[] { 99, 56, 65, 47, 48, 49, 22 }));
+            ArrayHelper.PrintArray(GetOddNumbers(new int[] { 1, 2, 3, 4, 5, 6, 7, 9 }));
+            ArrayHelper.PrintArray(GetOddNumbers(new int[] { 99, 56, 65, 47, 48, 49, 22 }));
         }
 
         private static int[] GetOddNumbers(int[] arr)
@@ -30,15 +31,5 @@ namespace algo_ds_dotnet.Algorithms.Lesson6_Recursion
             newArr = newArr.Concat(GetOddNumbers(arr.Skip(1).ToArray())).ToArray(); //different input
             return newArr;
         }
-
-        private static void PrintArray(int[] arr)
-        {
-            string str = "";
-            foreach (var item in arr)
-                str += item.ToString() + ",";
-            //str = str.Remove(str.Length - 1);
-            Console.WriteLine(str);
-        }
-
     }
 }
