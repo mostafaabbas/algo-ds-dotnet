@@ -42,7 +42,10 @@ namespace algo_ds_dotnet
 
             //RecursionSimpleExample.Run();
             //FactorialExample.Run();
-            GetOddNumbers_Example.Run();
+            //GetOddNumbers_Example.Run();
+            //NumPower_Excercise.Run();
+            //ProductOfArray_Excercise.Run();
+            Fibonacci_Excercise.Run();
 
             Console.ReadLine();
         }
