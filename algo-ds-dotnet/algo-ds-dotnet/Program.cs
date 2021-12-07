@@ -5,6 +5,7 @@ using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
 using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
 using algo_ds_dotnet.Algorithms.Lesson5_SlidingWindow;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion;
+using algo_ds_dotnet.Algorithms.Lesson6_Recursion.Excercises2;
 using System;
 
 namespace algo_ds_dotnet
@@ -45,7 +46,10 @@ namespace algo_ds_dotnet
             //GetOddNumbers_Example.Run();
             //NumPower_Excercise.Run();
             //ProductOfArray_Excercise.Run();
-            Fibonacci_Excercise.Run();
+            //Fibonacci_Excercise.Run();
+            //ReverseString_Excercise.Run();
+            //IsPalindrome_Excercise.Run();
+            ArrayAndCallback_Excercise.Run();
 
             Console.ReadLine();
         }
