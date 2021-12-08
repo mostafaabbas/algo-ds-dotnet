@@ -69,7 +69,8 @@ namespace algo_ds_dotnet
 
 
             //L1_BubbleSort.Run();
-            L2_SelectionSort.Run();
+            //L2_SelectionSort.Run();
+            L3_InsertionSort.Run();
 
 
 
