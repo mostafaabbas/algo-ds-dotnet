@@ -60,7 +60,8 @@ namespace algo_ds_dotnet
 
             //L1_LinearSearch.Run();
             //L2_BinarySearch.Run();
-            L2_BinarySearch_Recursively.Run();
+            //L2_BinarySearch_Recursively.Run();
+            L3_StringSearch_Naive.Run();
 
 
             Console.ReadLine();
