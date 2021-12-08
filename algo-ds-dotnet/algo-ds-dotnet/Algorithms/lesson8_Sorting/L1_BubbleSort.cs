@@ -19,11 +19,10 @@ namespace algo_ds_dotnet.Algorithms.lesson8_Sorting
         private static int[] Sort(int[] arr)
         {
             int arrLength = arr.Length;
-            bool noSwaps = true;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                noSwaps = true;
+                bool noSwaps = true;
                 for (int j = 0; j < arrLength - 1; j++)
                 {
                     if (arr[j] > arr[j + 1])

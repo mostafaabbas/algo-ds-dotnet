@@ -68,7 +68,9 @@ namespace algo_ds_dotnet
             #endregion
 
 
-            L1_BubbleSort.Run();
+            //L1_BubbleSort.Run();
+            L2_SelectionSort.Run();
+
 
 
             Console.ReadLine();
