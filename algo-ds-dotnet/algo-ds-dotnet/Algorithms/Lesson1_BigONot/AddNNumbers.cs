@@ -5,7 +5,7 @@ namespace algo_ds_dotnet.Algorithms.Lesson1_BigONot
 {
     public static class AddNNumbers
     {
-        public static void AddNNumbersTest()
+        public static void Run()
         {
             int n = 1000000000;
 

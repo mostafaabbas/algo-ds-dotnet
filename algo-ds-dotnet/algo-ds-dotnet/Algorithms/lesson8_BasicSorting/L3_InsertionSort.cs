@@ -1,6 +1,6 @@
 ﻿using algo_ds_dotnet.Helpers;
 
-namespace algo_ds_dotnet.Algorithms.lesson8_Sorting
+namespace algo_ds_dotnet.Algorithms.Lesson8_BasicSorting
 {
     public static class L3_InsertionSort
     {

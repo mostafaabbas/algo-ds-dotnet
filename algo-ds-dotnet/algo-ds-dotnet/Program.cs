@@ -7,7 +7,7 @@ using algo_ds_dotnet.Algorithms.Lesson5_SlidingWindow;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion.Excercises2;
 using algo_ds_dotnet.Algorithms.Lesson7_Search;
-using algo_ds_dotnet.Algorithms.lesson8_Sorting;
+using algo_ds_dotnet.Algorithms.Lesson8_BasicSorting;
 using System;
 
 namespace algo_ds_dotnet
@@ -18,8 +18,8 @@ namespace algo_ds_dotnet
         {
             #region lessons 1 - 5
 
-            //AddNNumbers.AddNNumbersTest();
-            //NestedLoop.NestedList_1(2);
+            //AddNNumbers.Run();
+            //NestedLoop.Run(2);
 
             //StringEachCharsCount.Run(Console.ReadLine());
 
@@ -67,10 +67,15 @@ namespace algo_ds_dotnet
 
             #endregion
 
+            #region basic sorting: bubble, selection, insertion
 
             //L1_BubbleSort.Run();
             //L2_SelectionSort.Run();
-            L3_InsertionSort.Run();
+            //L3_InsertionSort.Run();
+
+            #endregion
+
+
 
 
 

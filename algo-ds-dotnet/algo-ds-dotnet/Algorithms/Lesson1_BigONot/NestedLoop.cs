@@ -4,7 +4,7 @@ namespace algo_ds_dotnet.Algorithms.Lesson1_BigONot
 {
     public static class NestedLoop
     {
-        public static void NestedListTest()
+        public static void Run()
         {
 
         }
