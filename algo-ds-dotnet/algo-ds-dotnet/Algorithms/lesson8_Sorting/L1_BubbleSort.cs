@@ -1,9 +1,4 @@
 ﻿using algo_ds_dotnet.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace algo_ds_dotnet.Algorithms.lesson8_Sorting
 {
@@ -11,12 +6,12 @@ namespace algo_ds_dotnet.Algorithms.lesson8_Sorting
     {
         public static void Run()
         {
-            ArrayHelper.PrintArray(Sort(new int[] { 5, 3, 1, 9, 4, 6 }));
-            ArrayHelper.PrintArray(Sort(new int[] { 8, 1, 2, 3, 4, 5, 6, 7 }));
+            ArrayHelper.PrintArray(BubbleSort(new int[] { 5, 3, 1, 9, 4, 6 }));
+            ArrayHelper.PrintArray(BubbleSort(new int[] { 8, 1, 2, 3, 4, 5, 6, 7 }));
         }
 
 
-        private static int[] Sort(int[] arr)
+        private static int[] BubbleSort(int[] arr)
         {
             int arrLength = arr.Length;
 
