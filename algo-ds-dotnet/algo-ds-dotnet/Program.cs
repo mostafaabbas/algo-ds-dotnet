@@ -58,7 +58,9 @@ namespace algo_ds_dotnet
             #endregion
 
 
-            L1_LinearSearch.Run();
+            //L1_LinearSearch.Run();
+            //L2_BinarySearch.Run();
+            L2_BinarySearch_Recursively.Run();
 
 
             Console.ReadLine();
