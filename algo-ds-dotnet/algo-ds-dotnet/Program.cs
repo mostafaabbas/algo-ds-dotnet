@@ -77,8 +77,8 @@ namespace algo_ds_dotnet
             #endregion
 
 
-            L1_MergingArrays.Run();
-
+            //L1_MergingArrays.Run();
+            L2_MergeSort.Run();
 
 
             Console.ReadLine();
