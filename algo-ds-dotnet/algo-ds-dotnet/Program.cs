@@ -8,6 +8,7 @@ using algo_ds_dotnet.Algorithms.Lesson6_Recursion;
 using algo_ds_dotnet.Algorithms.Lesson6_Recursion.Excercises2;
 using algo_ds_dotnet.Algorithms.Lesson7_Search;
 using algo_ds_dotnet.Algorithms.Lesson8_BasicSorting;
+using algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting;
 using System;
 
 namespace algo_ds_dotnet
@@ -76,6 +77,7 @@ namespace algo_ds_dotnet
             #endregion
 
 
+            L1_MergingArrays.Run();
 
 
 
