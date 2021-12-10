@@ -77,10 +77,17 @@ namespace algo_ds_dotnet
             #endregion
 
 
+            #region sort
+
             //L1_MergingArrays.Run();
             //L2_MergeSort.Run();
+            
             //L3_PivotHelper.Run();
             L3_QuickSort.Run();
+
+
+
+            #endregion
 
 
             Console.ReadLine();
