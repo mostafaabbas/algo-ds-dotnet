@@ -83,7 +83,7 @@ namespace algo_ds_dotnet
             //L2_MergeSort.Run();
             
             //L3_PivotHelper.Run();
-            L3_QuickSort.Run();
+            //L4_QuickSort.Run();
 
 
 

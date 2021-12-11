@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting
 {
-    public static class L3_QuickSort
+    public static class L4_QuickSort
     {
         public static void Run()
         {
