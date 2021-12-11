@@ -60,6 +60,15 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
 
             linkedlist.Set("RRR!", 10);
             linkedlist.Traverse();
+
+            Console.WriteLine("---------------------------");
+
+            linkedlist.Insert("3333 inserted", 2);
+            linkedlist.Traverse();
+
+            Console.WriteLine("--------------------------- removing third");
+            linkedlist.Remove(2);
+            linkedlist.Traverse();
         }
     }
 }

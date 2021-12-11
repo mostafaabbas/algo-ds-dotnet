@@ -143,5 +143,71 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
         #endregion
 
 
+        #region insert, remove
+
+        public bool Insert(T val, int index)
+        {
+            if (index < 0 || index > Length)
+                return false;
+
+            if (index == Length)
+            {
+                Push(val);
+                return true;
+            }
+            else if(index == 0)
+            {
+                Unshift(val);
+                return true;
+            }
+
+            var newNode = new Node<T>(val);
+            Length++;
+
+            if (index == 0 && Length == 0)
+            {
+                Head = newNode;
+                Tail = newNode;
+                return true;
+            }
+
+            var nodeAtIndex = Get(index);
+            newNode.Next = nodeAtIndex;
+
+            if (index > 0)
+            {
+                var nodeBefore = Get(index - 1);
+                nodeBefore.Next = newNode;
+            }
+            else
+                Head = newNode;
+
+            return true;
+        }
+
+        public void Remove(int index)
+        {
+            if (index < 0 || index >= Length || Length == 0)
+                return;
+
+            if(index == 0)
+            {
+                Shift();
+                return;
+            }
+            else if(index == Length - 1)
+            {
+                Pop();
+                return;
+            }
+
+            Length--;
+            var nodeAtIndex = Get(index);
+            var nodeBefore = Get(index - 1);
+            nodeBefore.Next = nodeAtIndex.Next;
+        }
+
+        #endregion
+
     }
 }
