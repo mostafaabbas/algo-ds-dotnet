@@ -68,5 +68,33 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
             Length--;
             return last;
         }
+
+        public T Shift()
+        {
+            if (Length == 0) return default;
+
+            var first = Head.Value;
+
+            if (Length == 1)
+            {
+                Head = null;
+                Tail = null;
+            }
+            else
+                Head = Head.Next;
+
+            Length--;
+            return first;
+        }
+
+        public void Unshift(T val)
+        {
+            var node = new Node<T>(val);
+            node.Next = Head;
+            Head = node;
+            if (Length == 0)
+                Tail = node;
+            Length++;
+        }
     }
 }

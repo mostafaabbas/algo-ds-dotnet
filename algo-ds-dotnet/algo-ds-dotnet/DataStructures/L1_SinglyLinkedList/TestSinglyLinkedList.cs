@@ -15,6 +15,7 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
             linkedlist.Push("Hello");
             linkedlist.Push("World");
             linkedlist.Push("!!!");
+            linkedlist.Push("wowwwww");
             linkedlist.Traverse();
 
             Console.WriteLine("---------------------------");
@@ -23,7 +24,7 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
             linkedlist.Traverse();
             Console.WriteLine("---------------------------");
 
-            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
             linkedlist.Traverse();
 
             Console.WriteLine("---------------------------");
@@ -33,7 +34,15 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
 
             Console.WriteLine("---------------------------");
 
-            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
+
+            Console.WriteLine("---------------------------");
+
+            linkedlist.Unshift("Hello");
+            linkedlist.Unshift("World");
+            linkedlist.Push("!!!");
+            linkedlist.Unshift("wowwwww");
             linkedlist.Traverse();
         }
     }
