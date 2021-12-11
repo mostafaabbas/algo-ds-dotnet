@@ -142,7 +142,6 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
 
         #endregion
 
-
         #region insert, remove
 
         public bool Insert(T val, int index)
@@ -209,5 +208,26 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
 
         #endregion
 
+
+        public void Reverse()
+        {
+            if (Length <= 1) return;
+
+            var current = Head;
+            Head = Tail;
+            Tail = current;
+
+            Node<T> next = null;
+            Node<T> prev = null;
+
+            while(current != null)
+            {
+                next = current.Next;
+                current.Next = prev;
+
+                prev = current;
+                current = next;
+            }
+        }
     }
 }
