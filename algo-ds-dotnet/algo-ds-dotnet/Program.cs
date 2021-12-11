@@ -9,6 +9,7 @@ using algo_ds_dotnet.Algorithms.Lesson6_Recursion.Excercises2;
 using algo_ds_dotnet.Algorithms.Lesson7_Search;
 using algo_ds_dotnet.Algorithms.Lesson8_BasicSorting;
 using algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting;
+using algo_ds_dotnet.DataStructures.L1_SinglyLinkedList;
 using System;
 
 namespace algo_ds_dotnet
@@ -76,7 +77,6 @@ namespace algo_ds_dotnet
 
             #endregion
 
-
             #region sort
 
             //L1_MergingArrays.Run();
@@ -86,9 +86,17 @@ namespace algo_ds_dotnet
             //L4_QuickSort.Run();
 
             //L5_RadixHelper.Run();
-            L6_RasixSort.Run();
+            //L6_RasixSort.Run();
 
             #endregion
+
+
+            #region linked list
+
+            TestSinglyLinkedList.Run();
+
+            #endregion
+
 
 
             Console.ReadLine();

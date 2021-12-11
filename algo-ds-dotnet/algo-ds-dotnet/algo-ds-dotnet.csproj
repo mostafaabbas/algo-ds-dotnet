@@ -6,8 +6,4 @@
     <RootNamespace>algo_ds_dotnet</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="DataStructures\" />
-  </ItemGroup>
-
 </Project>
