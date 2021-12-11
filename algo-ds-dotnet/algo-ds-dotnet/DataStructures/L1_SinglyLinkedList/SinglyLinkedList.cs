@@ -11,18 +11,6 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
         public int Length { get; set; }
 
 
-        public void Push(T val)
-        {
-            var node = new Node<T>(val);
-            if (Head == null)
-                Head = node;
-            if (Tail != null)
-                Tail.Next = node;
-            Tail = node;
-
-            Length++;
-        }
-
         public void Traverse()
         {
             var current = Head;
@@ -34,6 +22,21 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
                 current = current.Next;
             }
             Console.WriteLine();
+        }
+
+
+        #region push, pop
+
+        public void Push(T val)
+        {
+            var node = new Node<T>(val);
+            if (Head == null)
+                Head = node;
+            if (Tail != null)
+                Tail.Next = node;
+            Tail = node;
+
+            Length++;
         }
 
         public T Pop()
@@ -69,6 +72,10 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
             return last;
         }
 
+        #endregion
+
+        #region shift, unshift
+
         public T Shift()
         {
             if (Length == 0) return default;
@@ -96,5 +103,45 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
                 Tail = node;
             Length++;
         }
+
+        #endregion
+
+        #region get, set
+
+        public Node<T> Get(int index)
+        {
+            if (index < 0 || index >= Length || Length == 0)
+                return null;
+
+            if (Length == 1) return Head;
+            if (index == Length - 1) return Tail;
+
+            var counter = 0;
+            var current = Head;
+            while(counter <= index)
+            {
+                if (counter == index)
+                    return current;
+                current = current.Next;
+                counter++;
+            }
+
+            return null;
+        }
+
+        public bool Set(T val, int index)
+        {
+            var nodeAtIndex = Get(index);
+            if (nodeAtIndex != null)
+            {
+                nodeAtIndex.Value = val;
+                return true;
+            }
+            return false;
+        }
+
+        #endregion
+
+
     }
 }

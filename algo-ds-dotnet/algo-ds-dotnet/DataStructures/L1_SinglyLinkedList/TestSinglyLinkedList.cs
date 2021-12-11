@@ -44,6 +44,22 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
             linkedlist.Push("!!!");
             linkedlist.Unshift("wowwwww");
             linkedlist.Traverse();
+
+            Console.WriteLine($"This should be Hello: => {linkedlist.Get(2)}");
+            Console.WriteLine($"This should be !!!: => {linkedlist.Get(3)}");
+            Console.WriteLine($"This should be World: => {linkedlist.Get(1)}");
+            Console.WriteLine($"This should be wowwwww: => {linkedlist.Get(0)}");
+
+            Console.WriteLine("---------------------------");
+
+            linkedlist.Set("Second!", 1);
+            linkedlist.Traverse();
+
+            linkedlist.Set("First!", 0);
+            linkedlist.Traverse();
+
+            linkedlist.Set("RRR!", 10);
+            linkedlist.Traverse();
         }
     }
 }
