@@ -1,9 +1,6 @@
 ﻿using algo_ds_dotnet.Helpers;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting
 {
@@ -24,7 +21,7 @@ namespace algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting
             for (int i = 0; i < loops; i++)
             {
                 int[][] buckets = new int[10][];
-                for (int h = 0; h < buckets.Length; h++) buckets[h] = new int[] { };
+                for (int h = 0; h < buckets.Length; h++) buckets[h] = Array.Empty<int>();
 
                 for (int j = 0; j < arr.Length; j++)
                 {
