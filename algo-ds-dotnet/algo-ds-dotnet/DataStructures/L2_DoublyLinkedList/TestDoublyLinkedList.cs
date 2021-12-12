@@ -73,21 +73,25 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
 
             Console.WriteLine("----------------------------------------- Set");
 
-            linkedlist.Set("1", 0);
-            linkedlist.Set("2", 1);
-            linkedlist.Set("3", 2);
+            linkedlist.Set("0", 0);
+            linkedlist.Set("1", 1);
+            linkedlist.Set("2", 2);
             linkedlist.Set("6", 6);
 
             linkedlist.Traverse();
 
-            //Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("----------------------------------------- Insert");
 
-            //linkedlist.Insert("3333 inserted", 2);
-            //linkedlist.Traverse();
+            linkedlist.Insert("2222 inserted", 2);
+            linkedlist.Traverse();
 
-            //Console.WriteLine("----------------------------------------- removing third");
-            //linkedlist.Remove(2);
-            //linkedlist.Traverse();
+            Console.WriteLine("----------------------------------------- removing");
+            linkedlist.Remove(2);
+            linkedlist.Remove(0);
+            linkedlist.Remove(7);
+            linkedlist.Remove(-1);
+            linkedlist.Remove(15);
+            linkedlist.Traverse();
 
             //Console.WriteLine("----------------------------------------- reverse");
             //linkedlist.Reverse();
