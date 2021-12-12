@@ -10,19 +10,23 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
 
             linkedlist.Traverse();
 
-            Console.WriteLine("---------------------------");
+            Console.WriteLine("--------------------------- Push");
 
-            //linkedlist.Push("Hello");
-            //linkedlist.Push("World");
-            //linkedlist.Push("!!!");
-            //linkedlist.Push("wowwwww");
-            //linkedlist.Traverse();
+            linkedlist.Push("Hello");
+            linkedlist.Push("World");
+            linkedlist.Push("!!!");
+            linkedlist.Push("wowwwww");
+            linkedlist.Traverse();
 
-            //Console.WriteLine("---------------------------");
+            Console.WriteLine("--------------------------- POP");
 
-            //Console.WriteLine($"Pop result: {linkedlist.Pop()}");
-            //linkedlist.Traverse();
-            //Console.WriteLine("---------------------------");
+            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            linkedlist.Traverse();
+            
+            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            linkedlist.Traverse();
+
+            Console.WriteLine("--------------------------- Shift");
 
             //Console.WriteLine($"Shift result: {linkedlist.Shift()}");
             //linkedlist.Traverse();

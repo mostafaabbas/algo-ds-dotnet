@@ -23,5 +23,40 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             }
             Console.WriteLine();
         }
+
+
+        #region push, pop
+
+        public void Push(T val)
+        {
+            var node = new Node<T>(val);
+
+            if (Length == 0)
+                Head = node;
+            else
+            {
+                node.Previous = Tail;
+                Tail.Next = node;
+            }
+
+            Tail = node;
+            Length++; 
+        }
+
+        public T Pop()
+        {
+            if (Length == 0) return default;
+
+            var val = Tail.Value;
+            Tail = Tail.Previous;
+            Tail.Next = null;
+            Length--;
+            return val;
+        }
+
+
+        #endregion
+
+
     }
 }
