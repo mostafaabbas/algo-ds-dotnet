@@ -21,39 +21,42 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             Console.WriteLine("--------------------------- POP");
 
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
-            linkedlist.Traverse();
-            
+            linkedlist.Traverse();            
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();
-
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();
-
+            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            linkedlist.Traverse();
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();
 
             Console.WriteLine("--------------------------- Shift");
 
-            //Console.WriteLine($"Shift result: {linkedlist.Shift()}");
-            //linkedlist.Traverse();
+            linkedlist.Push("Hello");
+            linkedlist.Push("World");
+            linkedlist.Push("!!!");
+            linkedlist.Push("wowwwww");
 
-            //Console.WriteLine("---------------------------");
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
+            Console.WriteLine($"Shift result: {linkedlist.Shift()}");
+            linkedlist.Traverse();
 
-            //Console.WriteLine($"Pop result: {linkedlist.Pop()}");
-            //linkedlist.Traverse();
+            Console.WriteLine("--------------------------- Unshift");
 
-            //Console.WriteLine("---------------------------");
+            linkedlist.Unshift("33333");
+            linkedlist.Unshift("22222");
+            linkedlist.Push("44444");
+            linkedlist.Unshift("11111");
 
-            //Console.WriteLine($"Shift result: {linkedlist.Shift()}");
-            //linkedlist.Traverse();
-
-            //Console.WriteLine("---------------------------");
-
-            //linkedlist.Unshift("Hello");
-            //linkedlist.Unshift("World");
-            //linkedlist.Push("!!!");
-            //linkedlist.Unshift("wowwwww");
-            //linkedlist.Traverse();
+            linkedlist.Traverse();
 
             //Console.WriteLine($"This should be Hello: => {linkedlist.Get(2)}");
             //Console.WriteLine($"This should be !!!: => {linkedlist.Get(3)}");
