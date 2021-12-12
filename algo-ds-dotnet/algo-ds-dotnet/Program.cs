@@ -10,6 +10,7 @@ using algo_ds_dotnet.Algorithms.Lesson7_Search;
 using algo_ds_dotnet.Algorithms.Lesson8_BasicSorting;
 using algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting;
 using algo_ds_dotnet.DataStructures.L1_SinglyLinkedList;
+using algo_ds_dotnet.DataStructures.L2_DoublyLinkedList;
 using System;
 
 namespace algo_ds_dotnet
@@ -93,7 +94,9 @@ namespace algo_ds_dotnet
 
             #region linked list
 
-            TestSinglyLinkedList.Run();
+            //TestSinglyLinkedList.Run();
+
+            TestDoublyLinkedList.Run();
 
             #endregion
 

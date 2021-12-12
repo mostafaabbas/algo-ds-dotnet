@@ -14,7 +14,7 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
         public void Traverse()
         {
             var current = Head;
-            Console.WriteLine($"Linked length is: {Length}");
+            Console.WriteLine($"length is: {Length}");
 
             while (current != null)
             {
@@ -208,6 +208,7 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
 
         #endregion
 
+        #region reverse
 
         public void Reverse()
         {
@@ -229,5 +230,7 @@ namespace algo_ds_dotnet.DataStructures.L1_SinglyLinkedList
                 current = next;
             }
         }
+
+        #endregion
     }
 }
