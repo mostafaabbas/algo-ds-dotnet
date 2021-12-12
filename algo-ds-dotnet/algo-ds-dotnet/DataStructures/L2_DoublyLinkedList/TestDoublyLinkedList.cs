@@ -26,6 +26,12 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();
 
+            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            linkedlist.Traverse();
+
+            Console.WriteLine($"Pop result: {linkedlist.Pop()}");
+            linkedlist.Traverse();
+
             Console.WriteLine("--------------------------- Shift");
 
             //Console.WriteLine($"Shift result: {linkedlist.Shift()}");

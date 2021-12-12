@@ -48,8 +48,11 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             if (Length == 0) return default;
 
             var val = Tail.Value;
+            if (Length == 1)
+                Head = null;
             Tail = Tail.Previous;
-            Tail.Next = null;
+            if (Tail != null)
+                Tail.Next = null;
             Length--;
             return val;
         }
