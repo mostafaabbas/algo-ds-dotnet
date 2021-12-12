@@ -85,17 +85,17 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             linkedlist.Insert("2222 inserted", 2);
             linkedlist.Traverse();
 
-            Console.WriteLine("----------------------------------------- removing");
+            Console.WriteLine("----------------------------------------- Remove");
             linkedlist.Remove(2);
             linkedlist.Remove(0);
-            linkedlist.Remove(7);
+            linkedlist.Remove(6);
             linkedlist.Remove(-1);
             linkedlist.Remove(15);
             linkedlist.Traverse();
 
-            //Console.WriteLine("----------------------------------------- reverse");
-            //linkedlist.Reverse();
-            //linkedlist.Traverse();
+            Console.WriteLine("----------------------------------------- Reverse");
+            linkedlist.Reverse();
+            linkedlist.Traverse();
         }
     }
 }

@@ -194,6 +194,35 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
                 var nodeToRemove = Get(position);
                 nodeToRemove.Previous.Next = nodeToRemove.Next;
                 nodeToRemove.Next.Previous = nodeToRemove.Previous;
+                Length--;
+            }
+        }
+
+        #endregion
+
+        #region reverse
+
+        public void Reverse()
+        {
+            if (Length <= 1) return;
+
+            var current = Head;
+            Head = Tail;
+            Tail = current;
+
+            Node<T> before, after;
+
+            while (current != null)
+            {
+                var next = current.Next;
+                if (current != null)
+                {
+                    before = current.Previous;
+                    after = current.Next;
+                    current.Previous = after;
+                    current.Next = before;
+                }
+                current = next;
             }
         }
 
