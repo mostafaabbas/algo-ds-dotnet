@@ -10,7 +10,7 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
 
             linkedlist.Traverse();
 
-            Console.WriteLine("--------------------------- Push");
+            Console.WriteLine("----------------------------------------- Push");
 
             linkedlist.Push("Hello");
             linkedlist.Push("World");
@@ -18,7 +18,7 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             linkedlist.Push("wowwwww");
             linkedlist.Traverse();
 
-            Console.WriteLine("--------------------------- POP");
+            Console.WriteLine("----------------------------------------- POP");
 
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();            
@@ -31,7 +31,7 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             Console.WriteLine($"Pop result: {linkedlist.Pop()}");
             linkedlist.Traverse();
 
-            Console.WriteLine("--------------------------- Shift");
+            Console.WriteLine("----------------------------------------- Shift");
 
             linkedlist.Push("Hello");
             linkedlist.Push("World");
@@ -49,41 +49,47 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
             Console.WriteLine($"Shift result: {linkedlist.Shift()}");
             linkedlist.Traverse();
 
-            Console.WriteLine("--------------------------- Unshift");
+            Console.WriteLine("----------------------------------------- Unshift");
 
-            linkedlist.Unshift("33333");
-            linkedlist.Unshift("22222");
-            linkedlist.Push("44444");
-            linkedlist.Unshift("11111");
+            linkedlist.Unshift("2222");
+            linkedlist.Unshift("1111");
+            linkedlist.Push("3333");
+            linkedlist.Unshift("0000");
 
             linkedlist.Traverse();
 
-            //Console.WriteLine($"This should be Hello: => {linkedlist.Get(2)}");
-            //Console.WriteLine($"This should be !!!: => {linkedlist.Get(3)}");
-            //Console.WriteLine($"This should be World: => {linkedlist.Get(1)}");
-            //Console.WriteLine($"This should be wowwwww: => {linkedlist.Get(0)}");
+            Console.WriteLine("----------------------------------------- get");
 
-            //Console.WriteLine("---------------------------");
+            linkedlist.Push("4444");
+            linkedlist.Push("5555");
+            linkedlist.Push("6666");
+            linkedlist.Push("7777");
+            //linkedlist.Push("8888");
+            //linkedlist.Push("9999");
+            Console.WriteLine($"This should be 2222: => {linkedlist.Get(2).Value}");
+            Console.WriteLine($"This should be 3333: => {linkedlist.Get(3).Value}");
+            Console.WriteLine($"This should be 6666: => {linkedlist.Get(6).Value}");
+            Console.WriteLine($"This should be Null: => {linkedlist.Get(50)}");
 
-            //linkedlist.Set("Second!", 1);
-            //linkedlist.Traverse();
+            Console.WriteLine("----------------------------------------- Set");
 
-            //linkedlist.Set("First!", 0);
-            //linkedlist.Traverse();
+            linkedlist.Set("1", 0);
+            linkedlist.Set("2", 1);
+            linkedlist.Set("3", 2);
+            linkedlist.Set("6", 6);
 
-            //linkedlist.Set("RRR!", 10);
-            //linkedlist.Traverse();
+            linkedlist.Traverse();
 
-            //Console.WriteLine("---------------------------");
+            //Console.WriteLine("-----------------------------------------");
 
             //linkedlist.Insert("3333 inserted", 2);
             //linkedlist.Traverse();
 
-            //Console.WriteLine("--------------------------- removing third");
+            //Console.WriteLine("----------------------------------------- removing third");
             //linkedlist.Remove(2);
             //linkedlist.Traverse();
 
-            //Console.WriteLine("--------------------------- reverse");
+            //Console.WriteLine("----------------------------------------- reverse");
             //linkedlist.Reverse();
             //linkedlist.Traverse();
         }

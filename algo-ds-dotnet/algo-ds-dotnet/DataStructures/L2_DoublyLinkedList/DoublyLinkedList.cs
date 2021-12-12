@@ -104,5 +104,51 @@ namespace algo_ds_dotnet.DataStructures.L2_DoublyLinkedList
         }
 
         #endregion
+
+        #region get, set
+
+        public Node<T> Get(int position)
+        {
+            if (position < 0 || position >= Length)
+                return null;
+
+            var middle = Math.Floor((decimal)Length / 2);
+            Node<T> node = null;
+
+            if (position > middle)
+            {
+                int counter = Length - 1;
+                node = Tail;
+                while (counter != position)
+                {
+                    node = node.Previous;
+                    counter--;
+                }
+            }
+            else
+            {
+                int counter = 0;
+                node = Head;
+                while (counter != position)
+                {
+                    node = node.Next;
+                    counter++;
+                }
+            }
+
+            //node.Previous = null;
+            //node.Next = null;
+            return node;
+        }
+
+        public void Set(T val, int position)
+        {
+            var node = Get(position);
+            if (node != null)
+                node.Value = val;
+        }
+
+        #endregion
+
     }
 }
