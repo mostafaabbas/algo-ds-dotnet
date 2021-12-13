@@ -14,6 +14,9 @@ namespace algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees
             tree.Insert(50);
             tree.Insert(25);
 
+            Console.WriteLine(tree.Find(50));
+            Console.WriteLine(tree.Find(30));
+
         }
     }
 }

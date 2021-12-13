@@ -45,5 +45,29 @@ namespace algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees
                     return;
             }
         }
+
+
+        public bool Find(T val)
+        {
+            if (Root == null) return false;
+            if (val.CompareTo(Root.Value) == 0) return true;
+
+            var current = Root;
+            while (current != null)
+            {
+                var compare = val.CompareTo(current.Value);
+                if (compare > 0)
+                {
+                    current = current.Right;
+                }
+                else if (compare < 0)
+                {
+                    current = current.Left;
+                }
+                else
+                    return true;
+            }
+            return false;
+        }
     }
 }
