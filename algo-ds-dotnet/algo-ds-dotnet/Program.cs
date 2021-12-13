@@ -11,6 +11,7 @@ using algo_ds_dotnet.Algorithms.Lesson8_BasicSorting;
 using algo_ds_dotnet.Algorithms.Lesson9_IntermediateSorting;
 using algo_ds_dotnet.DataStructures.L1_SinglyLinkedList;
 using algo_ds_dotnet.DataStructures.L2_DoublyLinkedList;
+using algo_ds_dotnet.DataStructures.L3_StacksQueues;
 using System;
 
 namespace algo_ds_dotnet
@@ -101,7 +102,7 @@ namespace algo_ds_dotnet
 
             #region stack - queues
 
-
+            TestStacks.Run();
 
             #endregion
 
