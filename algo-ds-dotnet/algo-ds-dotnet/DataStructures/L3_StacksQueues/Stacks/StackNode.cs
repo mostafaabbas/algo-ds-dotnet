@@ -1,4 +1,4 @@
-﻿namespace algo_ds_dotnet.DataStructures.L3_StacksQueues
+﻿namespace algo_ds_dotnet.DataStructures.L3_StacksQueues.Stacks
 {
     public class StackNode<T>
     {
