@@ -14,6 +14,7 @@ using algo_ds_dotnet.DataStructures.L2_DoublyLinkedList;
 using algo_ds_dotnet.DataStructures.L3_StacksQueues;
 using algo_ds_dotnet.DataStructures.L3_StacksQueues.Queues;
 using algo_ds_dotnet.DataStructures.L3_StacksQueues.Stacks;
+using algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees;
 using System;
 
 namespace algo_ds_dotnet
@@ -105,7 +106,13 @@ namespace algo_ds_dotnet
             #region stack - queues
 
             //TestStacks.Run();
-            TestQueues.Run();
+            //TestQueues.Run();
+
+            #endregion
+
+            #region trees
+
+            BST_Test.Run();
 
             #endregion
 
