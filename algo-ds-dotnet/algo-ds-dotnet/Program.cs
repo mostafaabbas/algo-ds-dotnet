@@ -95,12 +95,15 @@ namespace algo_ds_dotnet
             #region linked list
 
             //TestSinglyLinkedList.Run();
-
-            TestDoublyLinkedList.Run();
+            //TestDoublyLinkedList.Run();
 
             #endregion
 
+            #region stack - queues
 
+
+
+            #endregion
 
             Console.ReadLine();
         }
