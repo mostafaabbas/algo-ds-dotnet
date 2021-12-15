@@ -1,4 +1,6 @@
-﻿namespace algo_ds_dotnet.DataStructures.L3_StacksQueues.Queues
+﻿using System;
+
+namespace algo_ds_dotnet.DataStructures.L3_StacksQueues.Queues
 {
     public class CustomQueue<T>
     {
@@ -7,6 +9,21 @@
         public QueueNode<T> Last { get; set; }
 
         public int Size { get; set; }
+
+
+        public void Traverse()
+        {
+            string str = "";
+            var current = First;
+
+            while (current != null)
+            {
+                str += current.Value + " -> ";
+                current = current.Next;
+            }
+
+            Console.WriteLine(str);
+        }
 
 
         public void Enqueue(T val)

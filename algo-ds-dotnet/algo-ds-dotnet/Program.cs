@@ -15,6 +15,7 @@ using algo_ds_dotnet.DataStructures.L3_StacksQueues;
 using algo_ds_dotnet.DataStructures.L3_StacksQueues.Queues;
 using algo_ds_dotnet.DataStructures.L3_StacksQueues.Stacks;
 using algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees;
+using algo_ds_dotnet.DataStructures.L4_Trees.BreadthFirstSearch_BFS;
 using System;
 
 namespace algo_ds_dotnet
@@ -112,7 +113,8 @@ namespace algo_ds_dotnet
 
             #region trees
 
-            BST_Test.Run();
+            //BST_Test.Run(); //binary search tree
+            BFS_Test.Run(); //bread-first search
 
             #endregion
 
