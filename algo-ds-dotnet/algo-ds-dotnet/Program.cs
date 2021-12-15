@@ -17,6 +17,7 @@ using algo_ds_dotnet.DataStructures.L3_StacksQueues.Stacks;
 using algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees;
 using algo_ds_dotnet.DataStructures.L4_Trees.BreadthFirstSearch_BFS;
 using algo_ds_dotnet.DataStructures.L4_Trees.DepthFirstSearch_DFS;
+using algo_ds_dotnet.DataStructures.L5_Heaps;
 using System;
 
 namespace algo_ds_dotnet
@@ -116,7 +117,13 @@ namespace algo_ds_dotnet
 
             //BST_Test.Run(); //binary search tree
             //BFS_Test.Run(); //breadth-first search
-            DFS_Test.Run(); //depth-first search - pre-order
+            //DFS_Test.Run(); //depth-first search - pre-order
+
+            #endregion
+
+            #region heap
+
+            Heaps_Test.Run();
 
             #endregion
 
