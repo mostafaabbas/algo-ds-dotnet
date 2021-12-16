@@ -23,6 +23,10 @@ namespace algo_ds_dotnet.DataStructures.L5_Heaps
             Console.WriteLine(string.Join(" -> ", binaryHeap.Values));
             binaryHeap.Insert(100);
             Console.WriteLine(string.Join(" -> ", binaryHeap.Values));
+
+            Console.WriteLine($"ExtractMax: {binaryHeap.RemoveRoot_ExtractMax()}");
+            //binaryHeap.RemoveRoot_ExtractMax();
+            Console.WriteLine(string.Join(" -> ", binaryHeap.Values));
         }
     }
 }
