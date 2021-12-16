@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace algo_ds_dotnet.DataStructures.L5_Heaps
 {
@@ -27,6 +24,16 @@ namespace algo_ds_dotnet.DataStructures.L5_Heaps
             Console.WriteLine($"ExtractMax: {binaryHeap.RemoveRoot_ExtractMax()}");
             //binaryHeap.RemoveRoot_ExtractMax();
             Console.WriteLine(string.Join(" -> ", binaryHeap.Values));
+
+            Console.WriteLine("************* priority queue ********************");
+
+            PriorityQueue<string> pq = new PriorityQueue<string>();
+            pq.Enqueue("common cold", 5);
+            pq.Enqueue("high fever", 2);
+            pq.Enqueue("low fever", 3);
+            pq.Enqueue("injury", 1);
+            Console.WriteLine(string.Join(" -> ", pq.Values.Select(c => c.Value)));
+
         }
     }
 }
