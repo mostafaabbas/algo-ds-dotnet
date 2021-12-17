@@ -18,7 +18,8 @@ using algo_ds_dotnet.DataStructures.L4_Trees.BinarySearchTrees;
 using algo_ds_dotnet.DataStructures.L4_Trees.BreadthFirstSearch_BFS;
 using algo_ds_dotnet.DataStructures.L4_Trees.DepthFirstSearch_DFS;
 using algo_ds_dotnet.DataStructures.L5_Heaps;
-using algo_ds_dotnet.DataStructures.NewFolder;
+using algo_ds_dotnet.DataStructures.L6_HashTables;
+using algo_ds_dotnet.DataStructures.L7_Graphs;
 using System;
 
 namespace algo_ds_dotnet
@@ -130,7 +131,13 @@ namespace algo_ds_dotnet
 
             #region hash tables
 
-            HashTables_Test.Run();
+            //HashTables_Test.Run();
+
+            #endregion
+
+            #region graph
+
+            GraphTest.Run();
 
             #endregion
 
