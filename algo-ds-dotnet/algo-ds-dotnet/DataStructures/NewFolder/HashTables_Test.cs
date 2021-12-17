@@ -23,14 +23,22 @@ namespace algo_ds_dotnet.DataStructures.NewFolder
             //Console.WriteLine($"blue: => {NaiveHashing.NaiveHash_2("blue", arrLen)}");
             //Console.WriteLine($"cyan: => {NaiveHashing.NaiveHash_2("cyan", arrLen)}");
 
-            CustomHashTable ht = new CustomHashTable(9);
+            CustomHashTable ht = new CustomHashTable(53);
             ht.Set("red", "#FF0000");
             ht.Set("blue", "#0000FF");
             ht.Set("yellow", "#FFFF00");
             ht.Set("black", "#000000");
             ht.Set("white", "#FFFFFF");
 
+            Console.WriteLine($"red: FF0000 => {ht.Get("red")}");
+            Console.WriteLine($"blue: 0000FF => {ht.Get("blue")}");
+            Console.WriteLine($"yellow: FFFF00 => {ht.Get("yellow")}");
+            Console.WriteLine($"black: 000000 => {ht.Get("black")}");
+            Console.WriteLine($"white: FFFFFF => {ht.Get("white")}");
 
+            Console.WriteLine("********* Keys-Values **********************");
+            Console.WriteLine(string.Join(" -> ", ht.Keys));
+            Console.WriteLine(string.Join(" -> ", ht.Values));
         }
 
 

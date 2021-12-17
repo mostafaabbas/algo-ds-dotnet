@@ -10,10 +10,10 @@ namespace algo_ds_dotnet.DataStructures.NewFolder
     {
         public CustomHashTable(int size = 53)
         {
-            KeyMap = new List<List<string>>[size];
+            KeyMap = new Dictionary<string, string>[size];
         }
 
-        public List<List<string>>[] KeyMap { get; private set; }
+        public Dictionary<string, string>[] KeyMap { get; private set; }
 
 
         private int Hash(string key)
@@ -32,10 +32,47 @@ namespace algo_ds_dotnet.DataStructures.NewFolder
         public void Set(string key, string value) //separate chaining
         {
             var index = Hash(key);
-            var arr = KeyMap[index];
-            if (arr == null)
-                KeyMap[index] = new List<List<string>>();
-            KeyMap[index].Add(new List<string> { key, value });
+            var dic = KeyMap[index];
+            if (dic == null)
+                KeyMap[index] = new Dictionary<string, string>();
+            KeyMap[index].Add(key, value);
+        }
+
+        public string Get(string key)
+        {
+            var index = Hash(key);
+            var dic = KeyMap[index];
+            if (dic == null)
+                return default;
+            return dic[key];
+        }
+
+
+        public List<string> Keys
+        {
+            get
+            {
+                var keys = new List<string>();
+                foreach (var item in KeyMap)
+                {
+                    if (item != null)
+                        keys.AddRange(item.Keys);
+                }
+                return keys;
+            }
+        }
+        public List<string> Values
+        {
+            get
+            {
+                var values = new List<string>();
+                foreach (var item in KeyMap)
+                {
+                    if (item != null)
+                        values.AddRange(item.Values);
+                }
+                return values.Distinct().ToList();
+            }
         }
     }
 }
