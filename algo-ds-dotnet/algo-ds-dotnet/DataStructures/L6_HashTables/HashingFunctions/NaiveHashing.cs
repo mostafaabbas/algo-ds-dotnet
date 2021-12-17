@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace algo_ds_dotnet.DataStructures.NewFolder.HashingFunctions
+namespace algo_ds_dotnet.DataStructures.L6_HashTables.HashingFunctions
 {
     public static class NaiveHashing
     {
