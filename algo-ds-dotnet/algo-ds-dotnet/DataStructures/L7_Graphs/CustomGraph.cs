@@ -68,7 +68,7 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
             Console.WriteLine($"DFS_Recursive: {string.Join(" -> ", result)}");
         }
 
-        public void DFS_Iterative_Stack(T vertex)
+        public void DFS_Iterative(T vertex)
         {
             List<T> result = new List<T>();
             Stack<T> stack = new Stack<T>();
@@ -87,5 +87,27 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
 
             Console.WriteLine($"DFS_Iterative: {string.Join(" -> ", result)}");
         }
+
+
+        public void BFS_Iterative(T vertex)
+        {
+            List<T> result = new List<T>();
+            Queue<T> queue = new Queue<T>();
+
+            queue.Enqueue(vertex);
+
+            while (queue.Count > 0)
+            {
+                var v = queue.Dequeue();
+                if (result.Contains(v))
+                    continue;
+                result.Add(v);
+
+                AdjacentList[v].Where(c => result.Contains(c) == false).ToList().ForEach(queue.Enqueue);
+            }
+
+            Console.WriteLine($"BFS_Iterative: {string.Join(" -> ", result)}");
+        }
+
     }
 }

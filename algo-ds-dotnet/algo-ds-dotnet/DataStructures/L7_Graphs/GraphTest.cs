@@ -50,7 +50,8 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
             graph2.AddEdge("E", "F");
             graph2.Print();
             graph2.DFS_Recursive("A");
-            graph2.DFS_Iterative_Stack("A");
+            graph2.DFS_Iterative("A");
+            graph2.BFS_Iterative("A");
         }
     }
 }
