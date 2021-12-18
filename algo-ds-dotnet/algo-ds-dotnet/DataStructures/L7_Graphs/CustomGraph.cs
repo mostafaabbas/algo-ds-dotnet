@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace algo_ds_dotnet.DataStructures.L7_Graphs
 {
@@ -13,7 +14,7 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
         }
 
 
-        public void Traverse()
+        public void Print()
         {
             foreach (var item in AdjacentList)
                 Console.WriteLine($"{item.Key} => {string.Join(", ", item.Value)}");
@@ -44,6 +45,27 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
                 RemoveEdge(item.Key, vertex);
 
             AdjacentList.Remove(vertex);
+        }
+
+
+        public void DFS_Recursive(T vertex)
+        {
+            List<T> visitedVertices = new List<T>();
+            VisitVertex(vertex);
+
+            void VisitVertex(T vertex)
+            {
+                if (visitedVertices.Contains(vertex) == false)
+                    visitedVertices.Add(vertex);
+
+                var neighbors = AdjacentList[vertex].Where(c => visitedVertices.Contains(c) == false).ToList();
+                if (neighbors == null || neighbors.Count == 0)
+                    return;
+
+                neighbors.ForEach(VisitVertex);
+            }
+
+            Console.WriteLine($"DFS_Recursive: {string.Join(" -> ", visitedVertices)}");
         }
     }
 }
