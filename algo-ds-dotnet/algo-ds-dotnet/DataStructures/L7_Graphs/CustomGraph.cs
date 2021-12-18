@@ -50,22 +50,42 @@ namespace algo_ds_dotnet.DataStructures.L7_Graphs
 
         public void DFS_Recursive(T vertex)
         {
-            List<T> visitedVertices = new List<T>();
+            List<T> result = new List<T>();
             VisitVertex(vertex);
 
             void VisitVertex(T vertex)
             {
-                if (visitedVertices.Contains(vertex) == false)
-                    visitedVertices.Add(vertex);
+                if (result.Contains(vertex) == false)
+                    result.Add(vertex);
 
-                var neighbors = AdjacentList[vertex].Where(c => visitedVertices.Contains(c) == false).ToList();
+                var neighbors = AdjacentList[vertex].Where(c => result.Contains(c) == false).ToList();
                 if (neighbors == null || neighbors.Count == 0)
                     return;
 
                 neighbors.ForEach(VisitVertex);
             }
 
-            Console.WriteLine($"DFS_Recursive: {string.Join(" -> ", visitedVertices)}");
+            Console.WriteLine($"DFS_Recursive: {string.Join(" -> ", result)}");
+        }
+
+        public void DFS_Iterative_Stack(T vertex)
+        {
+            List<T> result = new List<T>();
+            Stack<T> stack = new Stack<T>();
+
+            stack.Push(vertex);
+
+            while (stack.Count > 0)
+            {
+                var v = stack.Pop();
+                if (result.Contains(v))
+                    continue;
+                result.Add(v);
+
+                AdjacentList[v].Where(c => result.Contains(c) == false).ToList().ForEach(stack.Push);
+            }
+
+            Console.WriteLine($"DFS_Iterative: {string.Join(" -> ", result)}");
         }
     }
 }
