@@ -137,7 +137,8 @@ namespace algo_ds_dotnet
 
             #region graph
 
-            GraphTest.Run();
+            //GraphTest.Run();
+            WeightedGraphTest.Run();
 
             #endregion
 
