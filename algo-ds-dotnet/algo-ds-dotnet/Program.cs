@@ -1,5 +1,6 @@
 ﻿using algo_ds_dotnet.Algorithms.Excercises;
 using algo_ds_dotnet.Algorithms.Lesson1_BigONot;
+using algo_ds_dotnet.Algorithms.Lesson10_DynamicProgramming;
 using algo_ds_dotnet.Algorithms.Lesson2_Problems;
 using algo_ds_dotnet.Algorithms.Lesson3_FreqCounter;
 using algo_ds_dotnet.Algorithms.Lesson4_MultiplePointers;
@@ -138,7 +139,14 @@ namespace algo_ds_dotnet
             #region graph
 
             //GraphTest.Run();
-            WeightedGraphTest.Run();
+            //WeightedGraphTest.Run();
+
+            #endregion
+
+
+            #region dynamic programming
+
+            Fibonacci_Dynamic.Run();
 
             #endregion
 
